@@ -52,7 +52,7 @@ app.get("/", (req, res) => {
     <CustomPage queryClient={queryClient} />,
     {
       bootstrapScripts: ["app.js"],
-      onAllReady: () => {
+      onShellReady: () => {
         res.statusCode = didError ? 500 : 200;
         res.setHeader("Content-type", "text/html");
         pipe(stream);
