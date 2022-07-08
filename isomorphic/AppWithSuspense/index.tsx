@@ -6,7 +6,7 @@ import * as React from "react";
 export const AppWithSuspense = () => (
   <>
     <h1>Hello World!</h1>
-    <Suspense>
+    <Suspense fallback={"...Loading"}>
       <App />
     </Suspense>
   </>

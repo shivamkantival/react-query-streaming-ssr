@@ -27,7 +27,7 @@ app.get("/", (req, res) => {
     defaultOptions: {
       queries: {
         suspense: true,
-        staleTime: 1000 * 60,
+        staleTime: Number.POSITIVE_INFINITY,
       },
     },
   });
